@@ -1,0 +1,107 @@
+/* Reset */
+*,
+*::after,
+*::before
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: unset;
+}
+/* Reset */
+
+/* General */
+header, .jumbo, .about, footer{
+  color: var(--main-text-color);
+}
+
+.portfolio, .contact{
+  color: var(--second-text-color);
+}
+
+header, .jumbo, h1, h2, h3, h4, h5, h6{
+  text-transform: uppercase;
+}
+
+input{
+  border:none;
+  background-image:none;
+  background-color:transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+input[type="text"]{
+  border-bottom: .5px solid var(--second-text-color) ;
+}
+
+input:focus-visible{
+  outline: none;
+}
+
+input::placeholder{
+  color: var(--second-text-color);
+  opacity: 1;
+}
+/* General */
+
+/* Root */
+:root{
+  --main-text-color: white;
+  --second-text-color: #333333;
+  --third-text-color:#1abc9c;
+  --header-bg-color: #2c3e50;
+  --main-bg-color: #1abc9c;
+  --footer-bg-color-top:#3a546d;
+  --footer-bg-color-bottom:#2c3e50;
+  
+}
+/* Root */
+
+/* Header */
+header{
+  background-color: var(--header-bg-color);
+}
+/* Header */
+
+/* Jumbo */
+.jumbo{
+  background-color: var(--main-bg-color);
+  min-height: 500px;
+}
+/* Jumbo */
+
+/* Portfolio */
+/* Portfolio */
+
+/* About */
+.about{
+  background-color: var(--main-bg-color);
+}
+/* About */
+
+/* Contact me */
+/* Contact me */
+
+/* Footer */
+footer .top{
+  background-color: var(--footer-bg-color-top);
+}
+
+footer .bottom{
+  background-color: var(--footer-bg-color-bottom);
+}
+
+footer h5, p, address{
+  text-align: center;
+}
+/* Footer */
