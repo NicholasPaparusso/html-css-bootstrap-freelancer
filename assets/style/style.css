@@ -1,4 +1,8 @@
-
+/* Reset */
+ul, ol{
+  list-style: none;
+}
+/* Reset */
 /* General */
 header, .jumbo, .about, footer, .nav-link{
   color: var(--main-text-color);
@@ -59,12 +63,24 @@ header h3 p{
   color: var(--main-text-color);
 }
 
+header .navbar-toggler-icon{
+ filter: invert(1) brightness(1) contrast(1);
+ opacity: 1;
+}
+
+header button.navbar-toggler{
+  border: unset;
+}
+
+header button.navbar-toggler:focus{
+  box-shadow: unset;
+}
+
 /* Header */
 
 /* Jumbo */
 .jumbotron{
   background-color: var(--main-bg-color);
-  min-height: 490px;
 }
 
 .jumbotron h2 p{
@@ -108,30 +124,115 @@ header h3 p{
   background-color: black;
 }
 
+.portfolio p{
+  text-align: justify;
+}
+
 /* Portfolio */
 
 /* About */
 .about{
   background-color: var(--main-bg-color);
-  min-height: 500px;
+}
+
+.btn-np{
+  border: 2px solid white;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.btn-np:hover{
+  border: 2px solid white;
 }
 /* About */
 
 /* Contact me */
 
+.contact hr{
+ background-color:black;
+}
+
+.contact input, .contact textarea{
+  border: none;
+  border-radius: 0;
+  border-bottom: .5px solid var(--footer-bg-color-bottom);
+  padding: 10px 0;
+}
+
+.contact textarea{
+  height: 200px;
+}
+
+.contact input:focus, .contact:focus-visible,
+.contact textarea:focus, .contact:focus-visible
+{
+  border: none;
+  box-shadow: unset;
+  border-radius: 0;
+  border-bottom: .5px solid var(--footer-bg-color-bottom);
+  padding: 10px 0;
+}
+
+.contact .btn{
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
 
 /* Contact me */
 
 /* Footer */
+footer{
+  max-height: 560px;
+}
+
 footer .top{
   background-color: var(--footer-bg-color-top);
+
 }
 
 footer .bottom{
   background-color: var(--footer-bg-color-bottom);
+  height: 110px;
 }
 
 footer h5, p, address{
   text-align: center;
+}
+
+footer .top .row{
+  height: 100%;
+}
+
+footer .top .row .col-10{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer .bottom .row{
+ height: 100%;
+}
+
+footer p span a{
+  color: var(--third-text-color);
+  text-decoration: none;
+}
+
+footer p span a:hover{
+  color: var(--third-text-color);
+  text-decoration:underline;
+}
+
+footer li a i{
+  font-size: 2em;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 8px;
+  margin: 5px 16px 0 0;
+  color: var(--main-text-color);
 }
 /* Footer */
