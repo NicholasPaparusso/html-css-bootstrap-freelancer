@@ -16,6 +16,29 @@ a{
   text-decoration: none;
   color: unset;
 }
+
+input, textarea{
+  border:none;
+  background-image:none;
+  background-color:transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+input[type="text"], textarea{
+  border-bottom: .5px solid var(--second-text-color) ;
+}
+
+input:focus-visible, textarea:focus-visible{
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder{
+  color: var(--second-text-color);
+  opacity: 1;
+}
+
 /* Reset */
 
 /* General */
@@ -31,27 +54,6 @@ header, .jumbo, h1, h2, h3, h4, h5, h6{
   text-transform: uppercase;
 }
 
-input{
-  border:none;
-  background-image:none;
-  background-color:transparent;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-
-input[type="text"]{
-  border-bottom: .5px solid var(--second-text-color) ;
-}
-
-input:focus-visible{
-  outline: none;
-}
-
-input::placeholder{
-  color: var(--second-text-color);
-  opacity: 1;
-}
 /* General */
 
 /* Root */
@@ -70,26 +72,61 @@ input::placeholder{
 /* Header */
 header{
   background-color: var(--header-bg-color);
+  height: 90px;
 }
 /* Header */
 
 /* Jumbo */
 .jumbo{
   background-color: var(--main-bg-color);
-  min-height: 500px;
+  min-height: 490px;
 }
+.jumbo .container
 /* Jumbo */
 
 /* Portfolio */
+
+.portfolio .row:nth-of-type(2){
+  display: flex;
+}
+
+.portfolio .row:nth-of-type(2) .col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* Portfolio */
 
 /* About */
 .about{
   background-color: var(--main-bg-color);
+  min-height: 500px;
 }
 /* About */
 
 /* Contact me */
+.contact input{
+  width: 100%;
+  padding: 1em 0;
+  font-size: 1em;
+}
+
+.contact input[type="submit"]{
+  width: unset;
+  padding: 1em 1.5em;
+  cursor: pointer;
+  background-color: var(--third-text-color);
+  color: white;
+  margin-top: 1em;
+  margin-bottom: 50px;
+  align-self: flex-start;
+}
+
+.contact textarea{
+  font-size: 1rem;
+}
+
+
 /* Contact me */
 
 /* Footer */
