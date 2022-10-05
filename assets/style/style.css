@@ -128,6 +128,30 @@ header button.navbar-toggler:focus{
   text-align: justify;
 }
 
+.portfolio .img{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.portfolio .img i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  font-size: 5em;
+  color: var(--third-text-color);
+  display: none;
+}
+
+.portfolio .img:hover i{
+  display: block;
+  z-index: 99;
+}
+
+.portfolio .img:hover img{
+  filter:brightness(70%);
+}
 /* Portfolio */
 
 /* About */
@@ -234,5 +258,9 @@ footer li a i{
   padding: 8px;
   margin: 5px 16px 0 0;
   color: var(--main-text-color);
+}
+
+footer li a i:hover{
+  color: var(--third-text-color);
 }
 /* Footer */
