@@ -262,5 +262,7 @@ footer li a i{
 
 footer li a i:hover{
   color: var(--third-text-color);
+  border-color: var(--third-text-color);
+  background-color: var(--main-text-color);
 }
 /* Footer */
