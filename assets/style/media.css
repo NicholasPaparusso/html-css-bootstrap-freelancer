@@ -5,5 +5,9 @@
   }
 }
 
-  
+@media screen and (max-width: 530px) {
+  .jumbotron span{
+    font-size: 1.6vh !important;
+  }
+}
      
